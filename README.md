@@ -1,4 +1,4 @@
-# react-tailwindcss-boilerplate
-A simple boilerplate that integrates react and tailwindcss
+# Stripe clone 
+A simple clone of the online payment website stripe using react
 
-Replace the stripe with your desired project name
+
