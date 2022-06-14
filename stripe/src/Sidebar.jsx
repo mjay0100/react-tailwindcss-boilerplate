@@ -1,5 +1,5 @@
 import React from "react";
-
+import { FaTimes } from "react-icons/fa";
 import { useGlobal } from "./Content";
 import sublinks from "./data";
 
@@ -14,7 +14,7 @@ const Sidebar = () => {
       >
         <div className="sidebar">
           <button className="close-btn" onClick={closeSidebar}>
-            X
+            <FaTimes />
           </button>
           <div className="sidebar-links">
             {sublinks.map((item, index) => {

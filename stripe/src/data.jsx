@@ -1,63 +1,28 @@
-import React from "react";
+import { FaCreditCard, FaBook, FaBriefcase } from 'react-icons/fa';
+import React from 'react';
 const sublinks = [
   {
-    page: "products",
+    page: 'products',
     links: [
-      {
-        label: "payment",
-        icon: <i className="fa-solid fa-bars text-2xl"></i>,
-        url: "/products",
-      },
-      {
-        label: "terminal",
-        icon: <i className="fa-solid fa-bars text-2xl"></i>,
-        url: "/products",
-      },
-      {
-        label: "connect",
-        icon: <i className="fa-solid fa-bars text-2xl"></i>,
-        url: "/products",
-      },
+      { label: 'payment', icon: <FaCreditCard />, url: '/products' },
+      { label: 'terminal', icon: <FaCreditCard />, url: '/products' },
+      { label: 'connect', icon: <FaCreditCard />, url: '/products' },
     ],
   },
   {
-    page: "developers",
+    page: 'developers',
     links: [
-      {
-        label: "plugins",
-        icon: <i className="fa-solid fa-bars text-2xl"></i>,
-        url: "/products",
-      },
-      {
-        label: "libraries",
-        icon: <i className="fa-solid fa-bars text-2xl"></i>,
-        url: "/products",
-      },
-      {
-        label: "help",
-        icon: <i className="fa-solid fa-bars text-2xl"></i>,
-        url: "/products",
-      },
-      {
-        label: "billing",
-        icon: <i className="fa-solid fa-bars text-2xl"></i>,
-        url: "/products",
-      },
+      { label: 'plugins', icon: <FaBook />, url: '/products' },
+      { label: 'libraries', icon: <FaBook />, url: '/products' },
+      { label: 'help', icon: <FaBook />, url: '/products' },
+      { label: 'billing', icon: <FaBook />, url: '/products' },
     ],
   },
   {
-    page: "company",
+    page: 'company',
     links: [
-      {
-        label: "about",
-        icon: <i className="fa-solid fa-bars text-2xl"></i>,
-        url: "/products",
-      },
-      {
-        label: "customers",
-        icon: <i className="fa-solid fa-bars text-2xl"></i>,
-        url: "/products",
-      },
+      { label: 'about', icon: <FaBriefcase />, url: '/products' },
+      { label: 'customers', icon: <FaBriefcase />, url: '/products' },
     ],
   },
 ];

@@ -2,7 +2,7 @@ import React from "react";
 import { useGlobal } from "./Content";
 import logo from "./images/logo.svg";
 import "./index.css";
-// import { FontAwesome } from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
 
 const Navbar = () => {
   
@@ -24,8 +24,8 @@ const Navbar = () => {
       <div className="nav-center">
         <div className="nav-header">
           <img src={logo} className="nav-logo" alt="" />
-          <button className="btn toggle-btn" onClick={openSidebar}>
-            |||
+          <button className="btn " onClick={openSidebar}>
+            <FaBars/>
           </button>
         </div>
         <ul className="nav-links">
