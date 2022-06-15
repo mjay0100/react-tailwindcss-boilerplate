@@ -5,8 +5,7 @@ import "./index.css";
 import { FaBars } from "react-icons/fa";
 
 const Navbar = () => {
-  
-   const { openSidebar, openSubmenu, closeSubmenu } = useGlobal();
+  const { openSidebar, openSubmenu, closeSubmenu } = useGlobal();
   const displaySubmenu = (e) => {
     const page = e.target.textContent;
     const tempBtn = e.target.getBoundingClientRect();
@@ -15,17 +14,17 @@ const Navbar = () => {
     openSubmenu(page, { center, bottom });
   };
   const handleSubmenu = (e) => {
-    if (!e.target.classList.contains('link-btn')) {
+    if (!e.target.classList.contains("link-btn")) {
       closeSubmenu();
     }
   };
   return (
-    <nav className="nav"  onMouseOver={handleSubmenu}>
+    <nav className="nav" onMouseOver={handleSubmenu}>
       <div className="nav-center">
         <div className="nav-header">
           <img src={logo} className="nav-logo" alt="" />
           <button className="btn toggle-btn" onClick={openSidebar}>
-            <FaBars/>
+            <FaBars />
           </button>
         </div>
         <ul className="nav-links">
